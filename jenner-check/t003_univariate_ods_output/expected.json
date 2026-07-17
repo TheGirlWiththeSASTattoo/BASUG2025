@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-17T16:13:13Z",
+  "_captured_run_id": "r_21d4cb02486a486a8d8304253bd14268",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: ODS OUTPUT: MOMENTS -> moments1",
+    "NOTE: ODS OUTPUT: BASICMEASURES -> basicmeasures1",
+    "NOTE: ODS OUTPUT: QUANTILES -> quantiles1"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

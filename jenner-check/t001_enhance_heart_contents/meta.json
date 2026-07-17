@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_enhance_heart_contents",
+  "source_file": "BASUG2025_ODSOutput_Exercises.sas",
+  "source_blob_sha": "29584f73f9463f46db357a00133342f44374db02",
+  "source_commit": "403878293393a321fe6196a2f956c501d4b67f1c",
+  "notes": "STEP4-6: three PROC CONTENTS views (collate, VARNUM, OUT=) of the enhanced SASHELP.HEART data set. libname out1 (a local Windows path) retargeted to WORK; data sampled from built-in SASHELP.HEART (50 rows under obs cap)."
+}

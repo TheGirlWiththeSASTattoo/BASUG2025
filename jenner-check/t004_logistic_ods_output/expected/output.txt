@@ -1,0 +1,146 @@
+The FORMAT Procedure
+Format Name: BMI_CATF
+    Start            End    Label
+        1              1    Underweight (<18.5)
+        2              2    Healthy Weight (<18.5-<25)
+        3              3    Overweight (<25-<30)
+        4              4    Obesity (30+)
+
+Format Name: OBESITYF
+    Start            End    Label
+        1              1    Not Obese
+        2              2    Class 1 Obesity
+        3              3    Class 2 Obesity
+        4              4    Class 3 Obesity (Severe)
+                                                                            BASUG 2025: ODS Output
+                                                                                   Logistics
+
+                                     
+---------------------------  --------
+Number of Observations Read        50
+Number of Observations Used        50
+
+            Response Profile            
+ Probability modeled is Status='Alive'  
+
+Ordered Value  Status    Total Frequency
+-------------  --------  ---------------
+            1  Alive                  27
+            2  Dead                   23
+
+    Class Level Information    
+
+Class       Levels  Values     
+--------  --------  -----------
+Sex              2  Female Male
+
+                                             
+---------------------------------------------
+Convergence criterion (GCONV=1E-8) satisfied.
+
+                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------
+WARNING: There is possibly a quasi-complete separation of data points. The maximum likelihood estimate may not exist.
+
+The LOGISTIC Procedure
+Response Variable: Status
+
+Criterion     Value
+---------  --------
+AIC          17.680
+-2 Log L      5.680
+SC           29.152
+
+            Analysis of Maximum Likelihood Estimates             
+
+Parameter   Estimate  Standard Error  Wald Chi-Square  Pr > ChiSq
+----------  --------  --------------  ---------------  ----------
+Intercept    32.9573         16.2475           4.1146      0.0425
+AgeAtStart   -0.1145          0.1097           1.0908      0.2963
+Sex          -1.7455          1.4898           1.3729      0.2413
+MRW          -0.2312          0.1745           1.7554      0.1852
+Smoking      -0.1172          0.0952           1.5147      0.2184
+bmi_cat       0.9421          1.8368           0.2631      0.6080
+
+                               Odds Ratio Estimates                               
+
+Effect                        Point Estimate  95% Wald CL Lower  95% Wald CL Upper
+----------------------------  --------------  -----------------  -----------------
+Sex                                    0.175              0.009              3.236
+Age at study start                     0.892              0.719              1.106
+Metropolitan Relative Weight           0.794              0.564              1.117
+Smoking Status                         0.889              0.738              1.072
+BMI Category                           2.565              0.070             93.887
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            2
+                                                                         Logistics Parameter Estimates
+
+  VARIABLE  CLASSVAL0       ESTIMATE         STDERR     WALDCHISQ     PROBCHISQ
+----------  ---------  -------------  -------------  ------------  ------------
+Intercept              32.9572599865  16.2475217721  4.1146030223  0.0425145018
+AgeAtStart             -0.1145340096   0.1096624702  1.0908194692  0.2962897123
+Sex         Female     -1.7455357202   1.4897521454  1.3728700857  0.2413193748
+MRW                     -0.231218503   0.1745150639  1.7554130755   0.185197678
+Smoking                -0.1172059718   0.0952338923  1.5146643759  0.2184287213
+bmi_cat                 0.9421070488   1.8367609193  0.2630844902  0.6080089439
+
+                                                                            BASUG 2025: ODS Output                                                                            2
+                                                                         Logistics Parameter Estimates
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: parameterestimates
+Observations:  6
+Variables:     6
+
+Variables (in creation order):
+
+  #  Variable   Type    Len  Format  Label
+---  ---------  ----  -----  ------  -----
+  1  VARIABLE   Char    200          
+  2  CLASSVAL0  Char    200          
+  3  ESTIMATE    Num      8          
+  4  STDERR      Num      8          
+  5  WALDCHISQ   Num      8          
+  6  PROBCHISQ   Num      8          
+
+-------------------------------------------------------------------------------
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            3
+                                                                             Logistics Odds Ratios
+
+    EFFECT  ODDSRATIOEST       LOWERCL        UPPERCL
+----------  ------------  ------------  -------------
+Sex         0.1745514532  0.0094155164   3.2359573869
+AgeAtStart  0.8917816088  0.7193059418   1.1056136083
+MRW         0.7935660505  0.5636838451    1.117199086
+Smoking     0.8894019826  0.7379634578   1.0719174211
+bmi_cat     2.5653811108  0.0700967954  93.8870344874
+
+                                                                            BASUG 2025: ODS Output                                                                            3
+                                                                             Logistics Odds Ratios
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: oddsratios
+Observations:  5
+Variables:     4
+
+Variables (in creation order):
+
+  #  Variable      Type    Len  Format  Label
+---  ------------  ----  -----  ------  -----
+  1  EFFECT        Char    200          
+  2  ODDSRATIOEST   Num      8          
+  3  LOWERCL        Num      8          
+  4  UPPERCL        Num      8          
+
+-------------------------------------------------------------------------------

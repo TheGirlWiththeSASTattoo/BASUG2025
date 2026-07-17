@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-17T16:13:13Z",
+  "_captured_run_id": "r_aca227e62a8449da9b671571808120c5",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: ODS OUTPUT: FITSTATISTICS -> fitstatistics",
+    "NOTE: ODS OUTPUT: ANOVA -> anova1",
+    "NOTE: Wrote work.heart (50 rows, 25 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

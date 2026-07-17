@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-17T16:13:13Z",
+  "_captured_run_id": "r_27d9efefa1b54149884e12d1d6d33bb2",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: ODS OUTPUT: PARAMETERESTIMATES -> parameterestimates",
+    "NOTE: ODS OUTPUT: ODDSRATIOS -> oddsratios",
+    "NOTE: Wrote work.heart (50 rows, 25 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

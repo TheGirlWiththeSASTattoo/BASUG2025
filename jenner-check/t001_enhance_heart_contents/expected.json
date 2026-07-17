@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-17T16:13:13Z",
+  "_captured_run_id": "r_d451b4640109458d948e3f731af8b146",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 50 rows from sashelp.heart.",
+    "NOTE: Wrote work.heart (50 rows, 25 columns).",
+    "NOTE: PROC CONTENTS completed: 50 observations, 25 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

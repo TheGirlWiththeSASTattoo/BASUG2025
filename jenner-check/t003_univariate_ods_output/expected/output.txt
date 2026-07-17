@@ -1,0 +1,203 @@
+The FORMAT Procedure
+Format Name: BMI_CATF
+    Start            End    Label
+        1              1    Underweight (<18.5)
+        2              2    Healthy Weight (<18.5-<25)
+        3              3    Overweight (<25-<30)
+        4              4    Obesity (30+)
+
+Format Name: OBESITYF
+    Start            End    Label
+        1              1    Not Obese
+        2              2    Class 1 Obesity
+        3              3    Class 2 Obesity
+        4              4    Class 3 Obesity (Severe)
+                                                                            BASUG 2025: ODS Output
+
+                                                                           The UNIVARIATE Procedure
+                                                                             Variable:  bmi  (BMI)
+
+                                                                                    Moments
+
+N                                 50    Sum Weights                       50
+Mean                       26.718749    Sum Observations         1335.937430
+Std Deviation               2.743438    Variance                    7.526453
+Skewness                    0.213826    Kurtosis                   -1.129610
+Uncorrected SS          36063.372552    Corrected SS              368.796216
+Coeff Variation            10.267840    Std Error Mean              0.387981
+
+         Basic Statistical Measures         
+
+Location             Variability            
+--------  ---------  -------------  --------
+Mean      26.718749  Std Deviation  2.743438
+Median    25.700007  Variance       7.526453
+Mode      29.531611  Range          9.651096
+
+Quantiles (Definition 5)
+
+Quantile     Estimate
+----------  ---------
+0% Min      22.296331
+1%          22.296331
+5%          22.655273
+10%         23.003631
+25% Q1      24.823249
+50% Median  25.700007
+75% Q3      29.315775
+90%         30.389759
+95%         31.173072
+99%         31.947427
+100% Max    31.947427
+
+          Extreme Observations          
+
+Lowest               Highest            
+--------  ---------  --------  ---------
+Value     22.296331  Value     30.537982
+Value     22.462722  Value     31.162875
+Value     22.655273  Value     31.173072
+Value     22.671706  Value     31.462518
+Value     22.981311  Value     31.947427
+
+
+
+
+         Tests for Location          
+
+Test                Statistic   p Value
+------------------  ---------  --------
+Student's t         68.866169593         0
+Sign                       25         0
+Signed Rank              1275  0.000000001
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            2
+
+                                                                           The UNIVARIATE Procedure
+                                                                             Variable:  bmi  (BMI)
+
+                                                                                    Moments
+
+N                                 50    Sum Weights                       50
+Mean                       26.718749    Sum Observations         1335.937430
+Std Deviation               2.743438    Variance                    7.526453
+Skewness                    0.213826    Kurtosis                   -1.129610
+Uncorrected SS          36063.372552    Corrected SS              368.796216
+Coeff Variation            10.267840    Std Error Mean              0.387981
+
+         Basic Statistical Measures         
+
+Location             Variability            
+--------  ---------  -------------  --------
+Mean      26.718749  Std Deviation  2.743438
+Median    25.700007  Variance       7.526453
+Mode      29.531611  Range          9.651096
+
+Quantiles (Definition 5)
+
+Quantile     Estimate
+----------  ---------
+0% Min      22.296331
+1%          22.296331
+5%          22.655273
+10%         23.003631
+25% Q1      24.823249
+50% Median  25.700007
+75% Q3      29.315775
+90%         30.389759
+95%         31.173072
+99%         31.947427
+100% Max    31.947427
+
+          Extreme Observations          
+
+Lowest               Highest            
+--------  ---------  --------  ---------
+Value     22.296331  Value     30.537982
+Value     22.462722  Value     31.162875
+Value     22.655273  Value     31.173072
+Value     22.671706  Value     31.462518
+Value     22.981311  Value     31.947427
+
+
+
+
+         Tests for Location          
+
+Test                Statistic   p Value
+------------------  ---------  --------
+Student's t         68.866169593         0
+Sign                       25         0
+Signed Rank              1275  0.000000001
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            3
+                                                            PROC CONTENTS on UNIVARIATE MOMENTS1 ODS OUTPUT object
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: moments1
+Observations:  6
+Variables:     5
+
+Variables (in creation order):
+
+  #  Variable  Type    Len  Format     Label
+---  --------  ----  -----  ---------  -----
+  1  VarName   Char      3             
+  2  Label1    Char     15             
+  3  nValue1    Num      8  BEST12.17  
+  4  Label2    Char     16             
+  5  nValue2    Num      8  BEST12.17  
+
+-------------------------------------------------------------------------------
+
+                                                                            BASUG 2025: ODS Output                                                                            3
+                                                              Test print on UNIVARIATE MOMENTS1 ODS OUTPUT object
+
+VarName           Label1           nValue1            Label2          nValue2
+-------  ---------------  ----------------  ----------------  ---------------
+BMI      N                              50  Sum Weights                    50
+BMI      Mean                26.7187485997  Sum Observations  1335.9374299834
+BMI      Std Deviation        2.7434382413  Variance             7.5264533841
+BMI      Skewness             0.2138255047  Kurtosis            -1.1296102679
+BMI      Uncorrected SS   36063.3725524338  Corrected SS       368.7962158198
+BMI      Coeff Variation     10.2678395701  Std Error Mean       0.3879807568
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            4
+                                                          Test print on UNIVARIATE BASIC MEASURES 1 ODS OUTPUT object
+
+VarName              Measure         Value
+-------  -------------------  ------------
+BMI      Mean                   26.7187486
+BMI      Median                 25.7000071
+BMI      Mode                 29.531611006
+BMI      Std Deviation         2.743438241
+BMI      Variance              7.526453384
+BMI      Range                 9.651095683
+BMI      Interquartile Range   4.492525679
+
+                                                                            BASUG 2025: ODS Output                                                                            4
+                                                             Test print on UNIVARIATE QUANTILES1 ODS OUTPUT object
+
+VarName    Quantile       Estimate
+-------  ----------  -------------
+BMI      0%          22.2963313609
+BMI      1%          22.2963313609
+BMI      5%          22.6552734375
+BMI      10%         23.0036311702
+BMI      25% Q1      24.8232493553
+BMI      50% Median  25.7000071004
+BMI      75% Q3      29.3157750343
+BMI      90%         30.3897590421
+BMI      95%         31.1730717549
+BMI      99%         31.9474270439
+
+... 1 more observations (showing 10 of 11)
