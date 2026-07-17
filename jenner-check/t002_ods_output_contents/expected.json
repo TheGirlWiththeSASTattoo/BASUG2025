@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-17T16:13:13Z",
+  "_captured_run_id": "r_a9ba3e403607462c90402a16da263884",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: ODS OUTPUT: VARIABLES -> variables1",
+    "NOTE: Wrote work.heart (50 rows, 25 columns).",
+    "NOTE: PROC PRINT completed: 5 observations printed, 8 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

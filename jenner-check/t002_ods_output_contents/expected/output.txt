@@ -1,0 +1,142 @@
+The FORMAT Procedure
+Format Name: BMI_CATF
+    Start            End    Label
+        1              1    Underweight (<18.5)
+        2              2    Healthy Weight (<18.5-<25)
+        3              3    Overweight (<25-<30)
+        4              4    Obesity (30+)
+
+Format Name: OBESITYF
+    Start            End    Label
+        1              1    Not Obese
+        2              2    Class 1 Obesity
+        3              3    Class 2 Obesity
+        4              4    Class 3 Obesity (Severe)
+                                                                            BASUG 2025: ODS Output
+                                                                 Contents of Heart - Order=Collate - ODS TRACE
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: work.heart
+Observations:  50
+Variables:     25
+
+Variables (in collate order):
+
+  #  Variable        Type    Len  Format  Label
+---  --------------  ----  -----  ------  ----------------------------
+  1  AgeAtDeath       Num      8          Age at death
+  2  AgeAtStart       Num      8          Age at study start
+  3  AgeCHDdiag       Num      8          Age at CHD diagnosis
+  4  BP_Status       Char    200          Blood pressure status
+  5  Chol_Status     Char    200          Cholesterol status
+  6  Cholesterol      Num      8          Cholesterol Status
+  7  DeathCause      Char    200          Cause of death
+  8  Diastolic        Num      8          Diastolic Blood Pressure
+  9  HeartID          Num      8          Heart Group Variable
+ 10  Height           Num      8          Height
+ 11  MRW              Num      8          Metropolitan Relative Weight
+ 12  SampleWeight     Num      8          Sample Weight
+ 13  SeqNum           Num      8          Sequence Number
+ 14  Sex             Char    200          Sex
+ 15  Smoking          Num      8          Smoking Status
+ 16  Smoking_Status  Char    200          Smoking status
+ 17  Status          Char    200          Status
+ 18  Systolic         Num      8          Systolic Blood Pressure
+ 19  Weight           Num      8          Weight
+ 20  Weight_Status   Char    200          Weight status
+ 21  bmi              Num      8          BMI
+ 22  bmi_cat          Num      8          BMI Category
+ 23  female           Num      8          Binary: Female
+ 24  male             Num      8          Binary: Male
+ 25  obesity_cat      Num      8          Obesity Category
+
+-------------------------------------------------------------------------------
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            2
+                                                                   Collate contents with ODS OUTPUT objects
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: work.heart
+Observations:  50
+Variables:     25
+
+Variables (in collate order):
+
+  #  Variable        Type    Len  Format  Label
+---  --------------  ----  -----  ------  ----------------------------
+  1  AgeAtDeath       Num      8          Age at death
+  2  AgeAtStart       Num      8          Age at study start
+  3  AgeCHDdiag       Num      8          Age at CHD diagnosis
+  4  BP_Status       Char    200          Blood pressure status
+  5  Chol_Status     Char    200          Cholesterol status
+  6  Cholesterol      Num      8          Cholesterol Status
+  7  DeathCause      Char    200          Cause of death
+  8  Diastolic        Num      8          Diastolic Blood Pressure
+  9  HeartID          Num      8          Heart Group Variable
+ 10  Height           Num      8          Height
+ 11  MRW              Num      8          Metropolitan Relative Weight
+ 12  SampleWeight     Num      8          Sample Weight
+ 13  SeqNum           Num      8          Sequence Number
+ 14  Sex             Char    200          Sex
+ 15  Smoking          Num      8          Smoking Status
+ 16  Smoking_Status  Char    200          Smoking status
+ 17  Status          Char    200          Status
+ 18  Systolic         Num      8          Systolic Blood Pressure
+ 19  Weight           Num      8          Weight
+ 20  Weight_Status   Char    200          Weight status
+ 21  bmi              Num      8          BMI
+ 22  bmi_cat          Num      8          BMI Category
+ 23  female           Num      8          Binary: Female
+ 24  male             Num      8          Binary: Male
+ 25  obesity_cat      Num      8          Obesity Category
+
+-------------------------------------------------------------------------------
+
+                                                                            BASUG 2025: ODS Output                                                                            2
+                                                                  Contents of Variables ODS Output (Collate)
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: variables1
+Observations:  25
+Variables:     8
+
+Variables (in alphabetical order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  FORMAT    Char    200          
+  2  INFORMAT  Char    200          
+  3  LABEL     Char    200          
+  4  LEN        Num      8          
+  5  MEMBER    Char    200          
+  6  NUM        Num      8          
+  7  TYPE      Char    200          
+  8  VARIABLE  Char    200          
+
+-------------------------------------------------------------------------------
+
+
+
+                                                                            BASUG 2025: ODS Output                                                                            3
+                                                                   Test Print Variables ODS Output (Collate)
+
+MEMBER  NUM    VARIABLE  TYPE  LEN  FORMAT  INFORMAT                 LABEL
+------  ---  ----------  ----  ---  ------  --------  --------------------
+HEART     1  Status      Char    8                    Status
+HEART     2  DeathCause  Char   25                    Cause of death
+HEART     3  AgeCHDdiag  Num     8                    Age at CHD diagnosis
+HEART     4  Sex         Char    8                    Sex
+HEART     5  AgeAtStart  Num     8                    Age at study start
+
+... 20 more observations (showing 5 of 25)

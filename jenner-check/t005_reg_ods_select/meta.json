@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_reg_ods_select",
+  "source_file": "BASUG2025_ODSOutput_Exercises.sas",
+  "source_blob_sha": "29584f73f9463f46db357a00133342f44374db02",
+  "source_commit": "403878293393a321fe6196a2f956c501d4b67f1c",
+  "notes": "STEP21: PROC REG demonstrating ODS SHOW/SELECT/EXCLUDE and harvesting Anova + FitStatistics ODS OUTPUT objects. out1->WORK; SASHELP.HEART input."
+}

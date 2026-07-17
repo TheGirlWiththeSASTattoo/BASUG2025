@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-17T16:13:13Z",
+  "_captured_run_id": "r_3c1cbffeca8e4132bf1ad3a29b7d7d94",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: ODS OUTPUT: CROSSTABS -> crosstabs_row",
+    "NOTE: ODS OUTPUT: CHISQ -> chisq1",
+    "NOTE: Wrote work.heart (50 rows, 25 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

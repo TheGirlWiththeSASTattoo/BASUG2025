@@ -1,0 +1,53 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Option PS changed to 55.
+NOTE: Option LS changed to 175.
+NOTE: Option VALIDVARNAME changed to V7.
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT bmi_catf defined (4 ranges).
+NOTE: FORMAT obesityf defined (4 ranges).
+NOTE: DATA work.heart
+
+
+NOTE: Read 50 rows from sashelp.heart.
+NOTE: Wrote work.heart (50 rows, 25 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to BASUG 2025: ODS Output.
+NOTE: Option TITLE2 changed to PROC SURVEYFREQ No Row Option.
+NOTE: ODS OUTPUT: CROSSTABS -> crosstabs_norow
+NOTE: PROC SURVEYFREQ data=work.heart
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: ODS OUTPUT: CrossTabs written to crosstabs_norow
+NOTE: PROC SURVEYFREQ completed.
+NOTE: ODS OUTPUT: All output destinations closed.
+NOTE: PROC CONTENTS data=crosstabs_norow
+
+NOTE: PROC CONTENTS completed: 6 observations, 5 variables
+NOTE: Option TITLE2 changed to PROC SURVEYFREQ Row Option.
+NOTE: ODS OUTPUT: CROSSTABS -> crosstabs_row
+NOTE: ODS OUTPUT: SUMMARY -> summary1
+NOTE: ODS OUTPUT: CHISQ -> chisq1
+NOTE: PROC SURVEYFREQ data=work.heart
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: ODS OUTPUT: CrossTabs written to crosstabs_row
+NOTE: ODS OUTPUT: ChiSq written to chisq1
+NOTE: PROC SURVEYFREQ completed.
+NOTE: ODS OUTPUT: All output destinations closed.
+NOTE: DATA rchisq1
+
+
+NOTE: Read 0 rows from chisq1.
+NOTE: Wrote rchisq1 (0 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=crosstabs_row
+
+NOTE: PROC PRINT completed: 6 observations printed, 6 variables
+NOTE: PROC PRINT data=rchisq1
